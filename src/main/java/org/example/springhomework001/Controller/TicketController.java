@@ -17,9 +17,10 @@ public class TicketController {
     private final AtomicLong ATOMIC_LONG = new AtomicLong(4L);
 
     public TicketController() {
-        TICKET_LIST.add(new Ticket(1L, "Teb Thida", "2026-02-10", "New York", "Los Angeless", 250.0, true, TicketStatus.BOOKED, "A1"));
-        TICKET_LIST.add(new Ticket(2L, "Mina Sii", "2026-08-15", "London", "The UK", 150.0, false, TicketStatus.CANCELED, "A2"));
+        TICKET_LIST.add(new Ticket(1L, "Teb Theda", "2026-02-10", "New York", "Los Angeless", 250.0, true, TicketStatus.BOOKED, "A1"));
+        TICKET_LIST.add(new Ticket(2L, "Mina Sii", "2026-08-15", "London", "The UK", 650.0, false, TicketStatus.CANCELED, "A2"));
         TICKET_LIST.add(new Ticket(3L, "Petros", "2026-10-20", "Rom", "Israel", 350.0, true, TicketStatus.COMPLETED, "A3"));
+        TICKET_LIST.add(new Ticket(4L, "Johnathan", "2026-30-25", "Phnome Penh", "Cambodia", 450.0, true, TicketStatus.COMPLETED, "A4"));
     }
 
     @GetMapping
